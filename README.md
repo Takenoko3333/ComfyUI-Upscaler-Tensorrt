@@ -62,6 +62,7 @@ In that case, follow the manual installation commands below.
 ```bash
 python -m pip install -i https://pypi.org/simple --extra-index-url https://pypi.nvidia.com tensorrt-cu12==10.12.0.36 tensorrt-cu12-bindings==10.12.0.36 tensorrt-cu12-libs==10.12.0.36
 ```
+> **Note:** Replace `<your path>` with your actual folder path (e.g., `D:\ai`).
 
 ## 💼 Installation for Portable Environment
  Navigate to the `/ComfyUI/custom_nodes` directory
@@ -77,6 +78,7 @@ In that case, follow the manual installation commands below.
 ```bash
 <your path>\ComfyUI_windows_portable\python_embeded\python.exe -m pip install -i https://pypi.org/simple --extra-index-url https://pypi.nvidia.com tensorrt-cu12==10.12.0.36 tensorrt-cu12-bindings==10.12.0.36 tensorrt-cu12-libs==10.12.0.36
 ```
+> **Note:** Replace `<your path>` with your actual folder path (e.g., `D:\ai`).
 
 ## 🛠️ Supported Models
 
