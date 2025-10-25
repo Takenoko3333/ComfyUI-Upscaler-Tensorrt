@@ -47,8 +47,7 @@ _Note: The following results were benchmarked on FP16 engines inside ComfyUI, us
 |  RTX3060  | 4x-UltraSharp |       1280 x 1280      |       5120 x 5120       |  0.35  |
 
 ## 🚀 Installation for venv Environment
-- Install via the manager
-- Or, navigate to the `/ComfyUI/custom_nodes` directory
+- Navigate to the `/ComfyUI/custom_nodes` directory
 
 ```bash
 git clone https://github.com/Takenoko3333/ComfyUI-Upscaler-Tensorrt.git
@@ -67,8 +66,7 @@ python -m pip install -i https://pypi.org/simple --extra-index-url https://pypi.
 ```
 
 ## 💼 Installation for Portable Environment
-- Install via the manager
-- Or, navigate to the `/ComfyUI/custom_nodes` directory
+- Navigate to the `/ComfyUI/custom_nodes` directory
 ```bash
 git clone https://github.com/Takenoko3333/ComfyUI-Upscaler-Tensorrt.git
 ```
