@@ -2,9 +2,9 @@
 
 # ComfyUI Upscaler TensorRT ⚡
 
-[![python](https://img.shields.io/badge/python-3.10.12-green)](https://www.python.org/downloads/release/python-31012/)
-[![cuda](https://img.shields.io/badge/cuda-12.7-green)](https://developer.nvidia.com/cuda-downloads)
-[![trt](https://img.shields.io/badge/TRT-10.9-green)](https://developer.nvidia.com/tensorrt)
+[![python](https://img.shields.io/badge/python-3.11.6-green)](https://www.python.org/downloads/release/python-3116/)
+[![cuda](https://img.shields.io/badge/cuda-12.8-green)](https://developer.nvidia.com/cuda-downloads)
+[![trt](https://img.shields.io/badge/TRT-10.12.0.36-green)](https://developer.nvidia.com/tensorrt)
 [![by-nc-sa/4.0](https://img.shields.io/badge/license-CC--BY--NC--SA--4.0-lightgrey)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)
 
 </div>
@@ -46,14 +46,40 @@ _Note: The following results were benchmarked on FP16 engines inside ComfyUI, us
 |  RTX3060  | 4x-UltraSharp |       512 x 512        |       2048 x 2048       |  2.2  |
 |  RTX3060  | 4x-UltraSharp |       1280 x 1280      |       5120 x 5120       |  0.35  |
 
-## 🚀 Installation
+## 🚀 Installation for venv Environment
 - Install via the manager
 - Or, navigate to the `/ComfyUI/custom_nodes` directory
 
 ```bash
-git clone https://github.com/yuvraj108c/ComfyUI-Upscaler-Tensorrt.git
-cd ./ComfyUI-Upscaler-Tensorrt
-pip install -r requirements.txt
+git clone https://github.com/Takenoko3333/ComfyUI-Upscaler-Tensorrt.git
+```
+venv activate first
+
+```bash
+<your path>\ComfyUI\venv\Scripts\activate
+cd .\custom_nodes\ComfyUI-Upscaler-Tensorrt
+python -m pip install -r requirements.txt
+```
+Some environments (especially portable) may fail automatic install.  
+In that case, follow the manual installation commands below.
+```bash
+python -m pip install -i https://pypi.org/simple --extra-index-url https://pypi.nvidia.com tensorrt-cu12==10.12.0.36 tensorrt-cu12-bindings==10.12.0.36 tensorrt-cu12-libs==10.12.0.36
+```
+
+## 💼 Installation for Portable Environment
+- Install via the manager
+- Or, navigate to the `/ComfyUI/custom_nodes` directory
+```bash
+git clone https://github.com/Takenoko3333/ComfyUI-Upscaler-Tensorrt.git
+```
+```bash
+cd .\ComfyUI-Upscaler-Tensorrt
+<your path>\ComfyUI_windows_portable\python_embeded\python.exe -m pip install -r requirements.txt
+```
+Some environments (especially portable) may fail automatic install.  
+In that case, follow the manual installation commands below.
+```bash
+<your path>\ComfyUI_windows_portable\python_embeded\python.exe -m pip install -i https://pypi.org/simple --extra-index-url https://pypi.nvidia.com tensorrt-cu12==10.12.0.36 tensorrt-cu12-bindings==10.12.0.36 tensorrt-cu12-libs==10.12.0.36
 ```
 
 ## 🛠️ Supported Models
@@ -109,8 +135,13 @@ pip install -r requirements.txt
 
 ## 🤖 Environment tested
 
-- Ubuntu 22.04 LTS, Cuda 12.4, Tensorrt 10.8, Python 3.10, H100 GPU
-- Windows 11
+- Ubuntu 22.04 LTS
+- Windows 10, Pytorch 2.7.1+cu128(Cuda 12.8), Tensorrt 10.12.0.36, Python 3.11.6, RTX 4080SUPER GPU
+- Windows 10, Pytorch 2.7.1+cu128(Cuda 12.8), Tensorrt 10.12.0.36, Python 3.12.9, RTX 4080SUPER GPU
+- Windows 11, Pytorch 2.7.1+cu128(Cuda 12.8), Tensorrt 10.12.0.36, Python 3.12.9, RTX 4080SUPER GPU
+
+## 📅 Update
+- 2025-10-26 Update requirements.txt, Installation Guide.
 
 ## 👏 Credits
 
