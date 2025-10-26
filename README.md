@@ -47,18 +47,19 @@ _Note: The following results were benchmarked on FP16 engines inside ComfyUI, us
 |  RTX3060  | 4x-UltraSharp |       1280 x 1280      |       5120 x 5120       |  0.35  |
 
 ## 🚀 Installation for venv Environment
-Navigate to the `/ComfyUI/custom_nodes` directory
+1. Navigate to the `/ComfyUI/custom_nodes` directory
 ```bash
 git clone https://github.com/Takenoko3333/ComfyUI-Upscaler-Tensorrt.git
 ```
-venv activate first
+2. venv activate first, Move the directory and install
 ```bash
 <your path>\ComfyUI\venv\Scripts\activate
 cd .\custom_nodes\ComfyUI-Upscaler-Tensorrt
 python -m pip install -r requirements.txt
 ```
-Some environments (especially portable) may fail automatic install.  
-In that case, follow the manual installation commands below.
+- Some environments (especially portable) may fail automatic install.<br>
+  In that case, follow the manual installation commands below.<br>
+  If no errors occur, skip it.
 ```bash
 python -m pip install -i https://pypi.org/simple --extra-index-url https://pypi.nvidia.com tensorrt-cu12==10.12.0.36 tensorrt-cu12-bindings==10.12.0.36 tensorrt-cu12-libs==10.12.0.36
 ```
@@ -69,12 +70,14 @@ python -m pip install -i https://pypi.org/simple --extra-index-url https://pypi.
 ```bash
 git clone https://github.com/Takenoko3333/ComfyUI-Upscaler-Tensorrt.git
 ```
+2. Move the directory and install
 ```bash
 cd .\ComfyUI-Upscaler-Tensorrt
 <your path>\ComfyUI_windows_portable\python_embeded\python.exe -m pip install -r requirements.txt
 ```
-Some environments (especially portable) may fail automatic install.  
-In that case, follow the manual installation commands below.
+- Some environments (especially portable) may fail automatic install.<br>
+  In that case, follow the manual installation commands below.<br>
+  If no errors occur, skip it.
 ```bash
 <your path>\ComfyUI_windows_portable\python_embeded\python.exe -m pip install -i https://pypi.org/simple --extra-index-url https://pypi.nvidia.com tensorrt-cu12==10.12.0.36 tensorrt-cu12-bindings==10.12.0.36 tensorrt-cu12-libs==10.12.0.36
 ```
