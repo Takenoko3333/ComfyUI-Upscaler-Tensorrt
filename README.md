@@ -15,10 +15,15 @@ This project provides a [Tensorrt](https://github.com/NVIDIA/TensorRT) implement
   <img src="assets/node_v3.png" style="height: 400px" />
 </p>
 
-## ⭐About this Repository
+## ⭐ About this Repository
 
-This is a modified version forked from ComfyUI Upscaler TensorRT, primarily optimized for easy implementation on the RTX 4000 series.
+This is a modified version forked from ComfyUI Upscaler TensorRT, primarily optimized for easy implementation on the RTX 4000 series.<br>
 Additionally, it describes the installation procedures for both the venv version and the portable version.
+
+## 🔔 Additional information
+
+The optimal TensorRT version varies depending on Python, PyTorch, CUDA, and GPU generation.<br>
+This repository is configured to install a TensorRT version that is generally suitable for the RTX 4000 series, but you may need to change the version depending on your environment.
 
 ## ⏱️ Performance
 
@@ -106,6 +111,7 @@ cd .\ComfyUI-Upscaler-Tensorrt
 ### 2025-11-10
 - Update README
 ### 2025-10-26
+- Fork the repository
 - primarily optimized for easy implementation on the RTX 4000 series
 - Added Installation Guide 
 ### 2025-08-27
