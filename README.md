@@ -41,7 +41,7 @@ git clone https://github.com/Takenoko3333/ComfyUI-Upscaler-Tensorrt.git
 2. venv activate first, Move the directory and install
 ```bash
 <your path>\ComfyUI\venv\Scripts\activate
-cd .\custom_nodes\ComfyUI-Upscaler-Tensorrt
+cd .\ComfyUI-Upscaler-Tensorrt
 python -m pip install -r requirements.txt
 ```
 - Some environments (especially portable) may fail automatic install.<br>
