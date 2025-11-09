@@ -103,13 +103,14 @@ cd .\ComfyUI-Upscaler-Tensorrt
 - If you've tested another working tensorrt model, let me know to add it officially to this node
 
 ## 🚨 Updates
+### 2025-11-10
+- Update README
 ### 2025-10-26
 - primarily optimized for easy implementation on the RTX 4000 series
 - Added Installation Guide 
 ### 2025-08-27
 - Support 4x-UltraSharpV2_Lite, 4x_UniversalUpscalerV2-Neutral_115000_swaG, 4x-ClearRealityV1
 - Load models from config [PR#57](https://github.com/yuvraj108c/ComfyUI-Upscaler-Tensorrt/pull/57)
-
 ### 30 April 2025
 - Merge https://github.com/yuvraj108c/ComfyUI-Upscaler-Tensorrt/pull/48 by @BiiirdPrograms to fix soft-lock by raising an error when input image dimensions unsupported
 ### 4 March 2025 (breaking)
