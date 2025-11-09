@@ -26,6 +26,7 @@ This repository installs tensorrt 10.12.0.36.
 The optimal TensorRT version varies depending on Python, PyTorch, CUDA, and GPU generation.<br>
 This repository is configured to install a TensorRT version that is generally suitable for the RTX 4000 series, but you may need to change the version depending on your environment.<br>
 This is just one example, but in relatively older environments, "tensorrt 10.4.0" may be an option, while in relatively newer environments, "tensorrt 10.13.3" may be an option.
+If you wish to install a different version, you should modify the commands listed in this repository and the version in requirements.txt before executing them.
 
 ## ⏱️ Performance
 
